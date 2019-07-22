@@ -1,0 +1,193 @@
+#us-map {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 7%;
+}
+
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+
+path {
+  border-color: #BF0A30;
+}
+
+path path:hover, path circle:hover {
+  stroke: #002868 !important;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+
+table {
+  font-family: 'Roboto', monospace;
+  width: 100%;
+  margin-top: -35%;
+  display: block;
+  height: 29em;
+  overflow-y: scroll;
+  border-collapse: collapse;
+}
+
+table .table-head {
+  font-size: 3vh;
+  height: 70px;
+}
+
+table tbody .small {
+  width: 5%;
+}
+
+table tbody td {
+  padding: 15px;
+}
+
+.banner {
+  font-size: 21vh;
+  font-family: 'Oswald', sans-serif, bold;
+  background-image: url("../images/banner-image.jpg");
+}
+
+.banner .text {
+  color: #FC5A3B;
+  padding-left: 2%;
+  line-height: 100%;
+}
+
+.banner .text em {
+  color: #F5CC8D;
+  margin-left: -1%;
+}
+
+.banner .banner-box {
+  font-size: 1.4vw;
+  background: #d1cdcb;
+  width: 21%;
+  height: 18%;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-color: #FC5A3B !important;
+  border-style: solid !important;
+  border-width: 5px !important;
+  -webkit-box-shadow: 6px 5px #FC5A3B;
+          box-shadow: 6px 5px #FC5A3B;
+}
+
+.banner .banner-box :first-child {
+  padding-left: 5%;
+  color: #FC5A3B;
+}
+
+.banner .tab-box {
+  height: 8%;
+  margin-top: 20px;
+}
+
+.banner .tab-box .square {
+  width: 1rem;
+  height: 1rem;
+  background-color: #FC5A3B;
+}
+
+.banner .tab-box #sq1 {
+  position: relative;
+  float: left;
+}
+
+.banner .tab-box #sq2 {
+  position: relative;
+  float: right;
+}
+
+.banner .tab-box #sq3 {
+  position: absolute;
+  float: left;
+  top: 65px;
+}
+
+.banner .tab-box #sq4 {
+  position: relative;
+  float: right;
+  top: 65px;
+}
+
+.map-box {
+  background-color: #d1cdcb;
+}
+
+.map-box .explain-text {
+  position: relative;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.map-box .explain-text .explain-map {
+  position: relative;
+  font-family: 'Roboto', monospace;
+  font-size: 16px;
+  bottom: 190;
+  margin-top: -1.7em;
+}
+
+.map-box .explain-text .explain-map .explain-break {
+  padding-top: 1em;
+}
+
+.map-box .map-heading {
+  color: #FC5A3B;
+  font-family: 'Oswald', sans-serif;
+  font-size: 7vh;
+  padding-top: 1.5%;
+  padding-left: 8%;
+}
+
+.map-box .hover-text {
+  font-family: 'Roboto', monospace;
+  margin-right: 60%;
+  margin-top: 3%;
+  color: #9B9A9A;
+  letter-spacing: -1.6px;
+}
+
+.map-box .hover-text .hover-text::after {
+  margin-bottom: -20px;
+}
+
+.map-box .map-row {
+  margin-top: -29%;
+}
+
+.map-box .table-row {
+  margin-top: -3%;
+  padding-right: 8%;
+}
+/*# sourceMappingURL=index.css.map */

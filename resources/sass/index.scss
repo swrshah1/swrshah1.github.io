@@ -1,0 +1,172 @@
+$orange: #FC5A3B;
+$light-orange: #F5CC8D;
+$light-grey: rgb(209, 205, 203);
+$green: #ADF58D;
+$blue: #8DB5F5;
+$muddy-yellow: #F5CC8D;
+$dark-grey: #9B9A9A;
+
+@import 'map.scss';
+@import 'table.scss';
+
+.banner {
+    font-size: 21vh;
+    font-family: 'Oswald', sans-serif, bold;
+    background-image: url('../images/banner-image.jpg');
+
+    & .text {
+
+        color: $orange;
+        padding-left: 2%;
+        line-height: 100%;
+
+        & em {
+
+            color: $light-orange;
+            margin-left: -1%;
+        }
+
+    }
+
+    .banner-box {
+
+        font-size: 1.4vw;
+        background: $light-grey;
+        width: 21%;
+        height: 18%;
+        font-family: 'Roboto Mono', monospace;
+        text-align: left;
+        align-items: center;
+        border-color: $orange !important;
+        border-style: solid !important;
+        border-width: 5px !important;
+        box-shadow: 6px 5px $orange;
+
+        & :first-child {
+
+            padding-left: 5%;
+            color: $orange;
+
+        }
+
+
+    }
+
+    & .tab-box {
+
+        //width: 25%;
+        height: 8%;
+        margin-top: 20px;
+
+        & .square {
+
+            width: 1rem;
+            height: 1rem;
+            background-color: $orange;
+
+        }
+
+        & #sq1 {
+
+            position: relative;
+            float: left;
+        }
+
+        & #sq2 {
+
+            position: relative;
+            float: right;
+
+        }
+
+        & #sq3 {
+
+            position: absolute;
+            float: left;
+            top: 65px;
+
+        }
+
+        & #sq4 {
+
+            position: relative;
+            float: right;
+            top: 65px;
+
+        }
+
+    }
+}
+
+.map-box {
+
+    background-color: $light-grey;
+
+
+    & .explain-text {
+
+        position: relative;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+
+
+    
+
+    & .explain-map {
+
+        position: relative;
+        font-family: 'Roboto', monospace;
+        font-size: 16px;
+        bottom: 190;  
+        margin-top: -1.7em;  
+        
+        & .explain-break {
+
+            padding-top: 1em;
+
+        }
+
+    }
+
+}
+
+    & .map-heading {
+
+        color: $orange;
+        font-family: 'Oswald', sans-serif;
+        font-size: 7vh;
+        padding-top: 1.5%;
+        padding-left: 8%;
+
+    }
+
+    & .hover-text {
+
+        font-family: 'Roboto', monospace;
+        margin-right: 60%;
+        margin-top: 3%;
+        color: $dark-grey;
+        letter-spacing: -1.6px;
+
+        & .hover-text::after {
+
+            margin-bottom: -20px;
+
+        }
+
+    }
+
+    .map-row {
+
+        margin-top: -29%;
+
+    }
+
+    .table-row {
+
+        margin-top: -3%;
+        padding-right: 8%;
+    }
+
+}
